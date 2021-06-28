@@ -20,5 +20,136 @@ body {
 .instragram-wapper {
     display: flex;
     align-items: center;/*aliamento vertical eixo y*/
-    justify-content: center;/* eixo x*/
+    justify-content: start;/* eixo x*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instragram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instragram-phone img {
+    height:50rem;
+}
+.inagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*por conta do flex direction ele agora está na vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){/*nth-child(1) pega as filhas do elemento selecionado. o numero representa qual filho ele afeta */
+    min-height: 19rem;
+}
+
+.intagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;/*impede que ultrapasse os limites  da div*/
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.profile-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.profile-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;/*deixa os elemento no meio*/
+    align-items: center;
+    padding: 1rem;
+}
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url(./img/apple-button.png);
+}
+.app-download:nth-child(2){
+    background-image: url(./img/googleplay-button.png);
+}
+
+/* Media queries */
+
+@media (max-width:1024px){
+    .instragram-wapper {
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instragram-wapper {
+        width: 90%;
+    }
+
+    .instragram-phone{
+        display: none;
+    }
+
+    .inagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+
 }
